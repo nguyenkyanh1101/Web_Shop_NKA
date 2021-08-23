@@ -1,0 +1,181 @@
+:root{
+    --primary-color:#EE4D2D;
+    --While-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+    --border-color:#dbdbdb;
+}
+*{
+    /* thẻ con kế thừa lại từ các thẻ chứa nó có thuộc tính là boxsizing*/
+    box-sizing: inherit;
+}
+
+html{
+    /* 16px =100% => 10px = 62,5% */
+    /* font-size: 62,5%;
+    line-height:1.6rem ;1rem = 10px do fontsize=62,5% => 1.6rem=16px */
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+.grid__row {
+    margin-left: -5px;
+    margin-right: -5px;
+    display: flex;
+    flex-wrap: wrap;/*độ dài thẻ con dài hơn grid__row sẽ bị xuống hàng khi dùng wrap*/
+}
+/* ------------------ TEST ---------------------------- */
+.grid__column-2{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: calc(2/12 * 100%);
+}
+
+.grid__column-10{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: calc(10/12 * 100%);
+    
+}
+
+.grid__column-2-4{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%
+}
+
+
+
+
+
+/* Animation */
+@keyframes hiendan{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes growth{
+    from{
+        transform: scale(var(--growth-from));
+    }
+    to
+    {
+        transform: scale(var(--growth-to));
+    }
+}
+/* modal  */
+.modal2.open2{
+    display: flex;
+}
+.modal2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    /* animation: hiendan ease-in 0.5s; */
+    animation: modalcomein ease 0.3s;
+    opacity: 1;
+}
+.modal.open{
+    display: flex;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    /* animation: hiendan ease-in 0.5s; */
+    animation: modalcomein ease 0.3s;
+    opacity: 1;
+}
+.model_overlay{
+    /* dính lên trên góc của modal có POS=fixed */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal_body{
+    --growth-from:0.7;
+    --growth-to:1;
+    background-color: var(--While-color);
+    margin: auto;
+    z-index: 1;
+    border-radius: 4px;
+    animation: growth ease-in 0.5s;
+}
+
+/* button */
+.btn1{
+    min-width: 124px;
+    height: 36px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 12px;
+      
+    
+}
+.btn{
+    min-width: 124px;
+    height: 36px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 60px;
+    margin-bottom: 20px;    
+    
+}
+.btn1.btn--primary{
+    color: var(--While-color);
+    background-color: var(--primary-color);
+}
+.btn.btn--primary{
+    color: var(--While-color);
+    background-color: var(--primary-color);
+}
+
+.auth_form-help{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.auth_form-helplink{
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+@keyframes modalcomein{
+    from{
+        opacity: 0;
+        transform: translateY(-550px);
+    }
+    to{
+        
+        transform: translateY(0px);
+    }
+}
+
+/* -------------------Reponsive------------------------------ */
+
+
+
+
+
+
+
+
+
+
+

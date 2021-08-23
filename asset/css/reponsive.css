@@ -1,0 +1,136 @@
+/*  Moblie -tablet */
+@media (max-width:1023px) {
+    
+    .header{
+        height: 70px;
+    }
+    .header-with-search{
+        height: 70px;
+    }
+    .hide-on-Moblie-tablet{
+        display: none;
+    }
+    .header_sort-bar{
+        display: flex;
+        top: 70px;
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+    }
+    .mobile-category_list{
+        display: flex;
+    }
+    .category{
+        display: none;
+    }
+    .mobile{
+        display: none;
+    }
+    .mobile1{
+        width: 100%;
+    }
+    
+    
+}
+
+/* tablet */
+@media (min-width:740px) and (max-width:1023px) {
+    .hide-on-Tablet{
+        display: none;
+    }
+    .cart{
+        width: 70px;
+        text-align: right;
+    }
+        
+    .app_container{
+        padding-top: 100px;
+        margin-top: 50px;
+        
+    }
+    }    
+    
+    
+    
+
+
+/* moblie */
+@media (max-width:739px) {
+    .hide-on-Moblie{
+        display: none;
+    }
+    .header-with-search{
+        justify-content: space-between;
+    }
+    .header{
+        
+        top: 0;
+        right: 0;
+        left: 0;
+        
+    }
+    .footer_down-QR{
+        width: 100%;
+    }
+    .panigation-item {
+        margin: 0 2px;
+    }
+    .panigation {
+        justify-content: flex-start;
+        padding: 0;
+    }
+    .home-products{
+        
+        z-index: 1;
+    }
+    
+    .logo,.cart{
+        width: unset;  /*bo di thuoc tinh width*/
+    }
+    .cart{
+        padding: 10px 0;
+    }
+    .logo-img{
+        display: block;
+    }
+    .search{
+        position: fixed;
+        top: 116px;
+        left: 0;
+        right: 0;
+        box-shadow: 0 1px 1px rgb(0 0 0 / 30%);
+        border: 1px solid #ccc;
+        padding: 0 16px;
+        animation: show_searchmobie ease 0.4s;
+        display: none;
+    }
+    .header-mobli-search{
+        display: block;
+    }
+    
+    .app_container{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+@keyframes show_searchmobie{
+    from{
+        opacity: 0;
+        top: 50px;
+    }
+    to{
+        opacity: 1;
+        top: 116px;
+    }
+}
+
+
+
+
+
+
