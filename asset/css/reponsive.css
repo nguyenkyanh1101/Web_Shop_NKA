@@ -14,6 +14,7 @@
         display: flex;
         top: 70px;
     }
+    
     .header{
         position: fixed;
         top: 0;
@@ -21,9 +22,7 @@
         left: 0;
         z-index: 10;
     }
-    .mobile-category_list{
-        display: flex;
-    }
+    
     .category{
         display: none;
     }
@@ -52,6 +51,10 @@
         margin-top: 50px;
         
     }
+    .mobile-category_list{
+        display: flex;
+    }
+    
     }    
     
     
@@ -73,6 +76,7 @@
         left: 0;
         
     }
+    
     .footer_down-QR{
         width: 100%;
     }
@@ -115,6 +119,10 @@
     .app_container{
         padding-right: 20px;
         padding-left: 20px;
+    }
+    .mobile-category_list{
+        display: flex;
+        padding-top: 120px;
     }
 }
 
